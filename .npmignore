@@ -1,0 +1,10 @@
+# tools
+.vscode
+.idea
+.github
+.editorconfig
+
+# sources
+*.ts
+!*.d.ts
+src/**/*.ts

@@ -1,0 +1,10 @@
+{
+	"extends": "@sfusurge/typescript-react-config",
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"**/*.test.ts",
+		"**/*.test.tsx",
+	]
+}

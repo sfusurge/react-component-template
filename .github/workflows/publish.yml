@@ -1,0 +1,23 @@
+name: {{PROJECT_NAME}}
+on:
+  push: {}
+
+jobs:
+  lint:
+    uses: 'sfusurge/actions-workflows/.github/workflows/npm-lint.yml@v1'
+    secrets: inherit
+    with:
+      workflow-ref: "v1"
+      cache-key: {{PROJECT_NAME}}
+      package: "."
+
+  publish:
+    uses: 'sfusurge/actions-workflows/.github/workflows/npm-publish.yml@v1'
+    secrets: inherit
+    needs: lint
+    with:
+      workflow-ref: "v1"
+      cache-key: {{PROJECT_NAME}}
+      package: "."
+      publish-gpr: ${{ startsWith(github.ref, 'refs/tags/v') }}
+      replace-version: "${{ github.ref_name }}"

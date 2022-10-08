@@ -1,0 +1,11 @@
+# build artifacts
+src/**/*.map
+src/**/*.js
+src/**/*.d.ts
+
+node_modules
+
+# system
+._*
+.DS_Store
+desktop.ini

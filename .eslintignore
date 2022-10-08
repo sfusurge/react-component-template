@@ -1,0 +1,3 @@
+# build artifacts
+src/**/*.d.ts
+src/**/*.js

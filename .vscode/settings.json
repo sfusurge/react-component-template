@@ -1,0 +1,55 @@
+{
+	"javascript.format.semicolons": "insert",
+	"javascript.preferences.quoteStyle": "double",
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+	"typescript.format.semicolons": "insert",
+	"typescript.preferences.quoteStyle": "double",
+
+	// Don't show formatting warnings in the IDE.
+	"eslint.rules.customizations": [{ "rule": "prettier/*", "severity": "off" }],
+
+	// Set the default formatter for JSON, TypeScript, JavaScript, and SCSS
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": false
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+
+	// Don't show build files or dependencies.
+	"files.exclude": {
+		".idea/**": true,
+
+		"build/**": true,
+		"node_modules/**": true,
+
+		"package-lock.json": true,
+
+		// Hide build artifacts.
+		"src/**/*.map": true,
+		"src/**/*.d.ts": true,
+		"src/**/*.js": true,
+	}
+}

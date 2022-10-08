@@ -1,0 +1,29 @@
+{
+	"name": "react-project-template",
+	"version": "1.0.0",
+	"description": "SFU Surge project template for reusable react components.",
+	"main": "src",
+	"types": "src",
+	"devDependencies": {
+		"@sfusurge/surge-scripts": "^2.0.2",
+		"@sfusurge/typescript-react-config": "^2.0.2",
+		"typescript": "*"
+	},
+	"peerDependencies": {
+		"react": ">=18"
+	},
+	"scripts": {
+		"build": "surge-scripts build",
+		"test": "surge-scripts test",
+		"format": "surge-scripts format src",
+		"lint": "surge-scripts lint src"
+	},
+	"author": "sfusurge",
+	"license": "MIT",
+	"prettier": "@sfusurge/prettier-config",
+	"eslintConfig": {
+		"extends": [
+			"@sfusurge"
+		]
+	}
+}
